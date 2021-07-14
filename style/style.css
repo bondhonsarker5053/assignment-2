@@ -56,6 +56,10 @@ a{
     height: 340px;
    
 }
+.players :hover{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+}
 p{
     font-size: 13px;
     color: grey;
@@ -84,6 +88,10 @@ p{
     margin-left: 0px;
     
 }
+.last-content :hover{
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 2s ease-in-out;
+    
 /* ---last-section end---- */
 
 /* ----footer start---- */
@@ -91,6 +99,7 @@ footer{
     display: block;
     margin-left: 500px;
     margin-bottom: 50px;
+    
 }
 footer img{
     width: 450px;
