@@ -5,13 +5,14 @@ body{
     
 }
 /* ---top-section start--- */
+
 .top-section{
     display: flex;
     background-color: darkblue;
     margin-bottom: 70px;
 }
 .top-content img{
-    width: 556.01px;
+    width: 556px;
     height: 438px;
     margin-top: 100px;
     margin-left: 150px;
@@ -32,6 +33,7 @@ a{
     
 }
 /* ---top-section end--- */
+
 /* ---middel-section start--- */
 .middle-section{
     display: grid;
@@ -59,6 +61,7 @@ p{
     color: grey;
 }
 /* ---middle-section end--- */
+
 /* ----last-section start--- */
 .last-section{
     display: flex;
@@ -82,6 +85,7 @@ p{
     
 }
 /* ---last-section end---- */
+
 /* ----footer start---- */
 footer{
     display: block;
@@ -91,4 +95,34 @@ footer{
 footer img{
     width: 450px;
     height: 210px;
+}
+/* ----footer end----- */
+/* -----media quarry------ */
+/* --------mobile devices------ */
+@media only screen and (max-width: 688px) {
+    .top-section .last-section{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .middle-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .middle-section{
+       flex-direction: column;
+    }
+}
+/* -----ipad derection---- */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .top-section .last-section{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .middle-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .middle-section{
+       flex-direction: column;
+    }
 }
